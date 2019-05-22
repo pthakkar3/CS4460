@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- PLEASE MAKE CSS FILE -->
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+    <title>P5</title>
+  </head>
+  <body>
+  <h1 align="center">College Information for Prospective Students</h1>
+    <div id="wrapper">
+
+      <div id="collegeSelector">
+        <p>Select a college</p>
+        <select id="collegeSelect" onchange="generateGraphs()">
+        </select>
+      </div>
+
+      <div id="dotGraph"></div>
+      <div id="pieChart"></div>
+      <div id="barChart"></div>
+      <div id="detailChart">
+        <strong>Admission Rate:</strong> <span id="admRate"></span><br/>
+        <strong>Average Cost:</strong> <span id="avgCost"></span><br/>
+        <strong>Undergrad Population:</strong> <span id="undergradPop"></span><br/>
+        <strong>ACT Median:</strong> <span id="act"></span><br/>
+        <strong>SAT Average:</strong> <span id="sat"></span><br/>
+      </div>
+    </div>
+
+  </body>
+</html>
